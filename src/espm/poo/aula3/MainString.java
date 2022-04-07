@@ -1,0 +1,51 @@
+package espm.poo.aula3;
+
+public class MainString {
+
+    public static void main(String[] args){
+        String n1= "Humberto";
+        String n2= "Doisberto";
+
+        System.out.println("n1:"+n1);
+        System.out.println("n2:"+n2);
+
+        n2=n2.replaceAll("Dois", "Hum");
+        System.out.println("n1:"+n1);
+        System.out.println("n2:"+n2);
+
+
+        if(n1 == n2){ //Comparação entre strings ERRADO
+            System.out.println(n1+ "==" + n2);
+        }else{
+            System.out.println(n1+"!="+n2);
+        }
+
+        if(n1.equals(n2)){ //Comparação entre strings CORRETA
+            System.out.println(n1+ "==" + n2);
+        }else{
+            System.out.println(n1+"!="+n2);
+        }
+
+
+
+
+        String n3= "ESPM";
+        String n4= "ESPM";
+        if(n3 == n4){ //Comparação entre strings ERRADA
+            System.out.println(n3+ "==" + n4);
+        }else{
+            System.out.println(n3+"!="+n4);
+        }
+      
+        if("ESPM".equals(n4)){ //Comparação entre strings CORRETA
+            System.out.println(n1+ "==" + n2);
+        }else{
+            System.out.println(n1+"!="+n2);
+        }
+
+
+
+
+    }
+    
+}
